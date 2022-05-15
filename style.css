@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Oleo Script Swash Caps", cursive;
+  font-size: 20px;
+  padding-top: 70px;
+  background-color: #eee;
+}
+
+nav {
+  /* display: inline; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(245, 232, 215);
+  height: 50px;
+  z-index: 10;
+}
+nav > ul {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+nav > ul > li {
+  list-style: none;
+  display: inline;
+  margin: 0 20px;
+}
+nav > ul > li > a {
+  text-decoration: none;
+  color: rgb(51, 51, 206);
+}
+#main {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+#main h1 {
+  font-size: 12vh;
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+}
+#main p {
+  margin: 0;
+  font-size: 5vh;
+}
+#img-div {
+  background-color: white;
+  padding: 15px;
+}
+#image {
+  width: 100%;
+  display: block;
+}
+
+#img-caption {
+  margin-top: 10px;
+  font-size: 0.7em;
+}
+#tribut-info {
+  width: 600px;
+  margin: 0 auto;
+}
+#tribut-info h2 {
+  text-align: center;
+}
+#tribut-info ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+#tribut-info li {
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+}
+.album {
+  position: relative;
+}
+.album-img {
+  width: 100%;
+  height: 100%;
+}
+.album .album-overlay {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.5s;
+}
+.album .album-overlay:hover {
+  opacity: 1;
+}
+
+.release-date {
+  font-size: 0.8em;
+}
+.album-name {
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+#videos {
+  text-align: center;
+}
+#follow {
+  text-align: center;
+  background-color: black;
+  padding: 5px 0;
+}
+#follow h2 {
+  color: white;
+}
+#follow ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#follow ul li {
+  font-size: 2em;
+  margin: 0 10px;
+}
+#follow li a {
+  color: white;
+}
